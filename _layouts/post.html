@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<section>
+    <h2>{{page.title}}</h2>
+    {{content}}
+    <span style="float: right;">
+        <b>{{ page.date | date_to_string }}</b> by <a>{{ page.author }}</a>
+    </span>
+</section>

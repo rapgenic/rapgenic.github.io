@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="hack green">
+
+    <div class="container" style="padding-top: 20px">
+
+      {%- include header.html -%}
+
+      <div class="grid main">
+        <aside class="cell -3of12" role="navigation">
+          <section class="navigation">
+            <h2>Pages</h2>
+
+            <nav class="menu" role="menubar">
+              <!-- {% assign url = page.url|remove:'index.html' %} -->
+              {% for link in site.html_pages %}
+              {% if link.navshow %}
+                <a class="menu-item {% if url == link.url %}active{% endif %}"
+                  role="menuitem" href="{{ link.url | prepend: site.baseurl }}" title="{{ link.title }}">
+                  {{ link.title }} <div class="pull-right">»</div>
+                </a>
+              {% endif %}
+              {% endfor %}
+            </nav>
+          </section>
+        </aside>
+
+        <main class="cell -9of12" aria-label="Content">
+          {{ content }}
+        </main>
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

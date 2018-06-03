@@ -1,0 +1,31 @@
+.green a {
+	cursor: pointer;
+	color: #8bc34a;
+	text-decoration: none;
+	border-bottom: 1px solid #8bc34a;
+}
+
+.green a:hover {
+	background-color: #8bc34a;
+	color: #fff;
+}
+
+.header {
+  border-bottom: 1px solid #8bc34a;
+}
+
+.navigation {
+  padding-right: 10px !important;
+}
+
+a.img {
+  border-bottom: 0px;
+}
+
+a.img:hover {
+  background-color: transparent;
+}
+
+.main {
+  padding-top: 20px;
+}
