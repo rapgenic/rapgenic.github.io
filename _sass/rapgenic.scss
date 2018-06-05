@@ -1,3 +1,4 @@
+// Color
 .green a {
 	cursor: pointer;
 	color: #8bc34a;
@@ -10,22 +11,94 @@
 	color: #fff;
 }
 
+// Header
 .header {
-  border-bottom: 1px solid #8bc34a;
+	border-bottom: 1px solid #8bc34a;
+}
+
+.header img {
+	padding-right: 10px;
 }
 
 .navigation {
-  padding-right: 10px !important;
+	padding-right: 10px !important;
+	padding-bottom: 20px !important;
+}
+
+// Page
+.main {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+// Cards
+.card {
+	margin-bottom: 20px;
+}
+
+// Images
+main img {
+	max-width: 100%;
+	width: 100%;
 }
 
 a.img {
-  border-bottom: 0px;
+	border-bottom: 0px;
 }
 
 a.img:hover {
-  background-color: transparent;
+	background-color: transparent;
 }
 
-.main {
-  padding-top: 20px;
+// Code highlighting
+.highlight {
+	margin: 0;
+	width: 580px; // VERY BAD THING
+}
+
+.highlight pre {
+	padding: 5px;
+	border: 0;
+	margin: 0;
+}
+
+figure.highlight>pre {
+	padding: 5px 0;
+}
+
+.highlight .lineno { 
+	color: #ccc; 
+	display:inline-block; 
+	border-right:1px solid #ccc; 
+}
+
+.highlight table {
+	margin: 0;
+	color: unset;
+}
+
+.highlight table td {
+	border: 0;
+	padding: 0;
+	//padding: 0 5px;
+}
+
+.highlight table tr {
+	padding: 0;
+}
+
+.highlight pre code { 
+	border: 1px solid #ccc;
+	display: block; 
+	white-space: pre; 
+	overflow-x: auto; 
+	word-wrap: normal; 
+}
+
+.highlight code::before {
+	all: unset !important;
+}
+
+.highlight code::after {
+	all: unset !important;
 }

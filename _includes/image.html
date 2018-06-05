@@ -1,0 +1,12 @@
+<div class="{{ include.class }}" style="max-width: {{ include.max-width | default: "100%" }};">
+    {% if include.caption %} {% assign alt = include.alt | default: include.caption %}
+        <div class="card">
+            <div class="card-content">
+                <img src="{{ site.baseurl }}{{ include.url }}" alt="{{ alt }}" />
+            </div>
+            <header class="card-header">{{ include.caption }}</header>
+        </div>
+    {% else %}
+        <img class="{{ include.class }}" src="{{ site.baseurl }}{{ include.url }}" alt="{{ include.alt }}" /> 
+    {% endif %}
+</div>
