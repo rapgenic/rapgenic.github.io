@@ -50,10 +50,14 @@ a.img:hover {
 	background-color: transparent;
 }
 
+// Flex
+.cell {
+	min-width: 0;
+}
+
 // Code highlighting
 .highlight {
 	margin: 0;
-	width: 580px; // VERY BAD THING
 }
 
 .highlight pre {
